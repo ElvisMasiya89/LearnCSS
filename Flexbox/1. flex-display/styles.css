@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+}
+.container {
+    border: 6px solid black;
+
+
+    /*Flex properties for  flexbox container*/
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+    height: 400px;
+    /* flex-flow: row-reverse wrap  it is short for <flex-direction> <flex-wrap> */
+    justify-content: flex-start;/* align  items on the main axis*/
+    align-items: flex-end ;/* align  items on the cross axis*/
+    align-content:center /*align lines of content along the cross axis and distribute any extra spacing  in the parent container*/
+
+
+
+}
+.flex-item {
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+
+      /*Flex properties for item in flexbox container*/
+      flex: 0 1 auto  /*flex is short hand for flex-grow, flex-shrink, flex-basis with 0, 1, auto being thier default values*/
+     
+}
+.item-1 {
+    background-color: #B4BF35;
+    padding-top: 3rem;
+
+
+ /*Flex properties for item in flexbox container*/
+
+
+    order: 1;
+
+    flex-grow: 1; /*Dictates what amount of the available space inside the flex container the item should take up*/ 
+
+    flex-shrink: 2;/*Dictates the shrink of the  factor flex  items  when the default size of flex items is larger than the flex container*/ 
+
+    flex-basis: auto; /*Set the initial size of a flex item*/
+
+    align-self: flex-start;/* align-self align  items individually, override the align-items value of the flex container whose default value 
+    is stretch, align-self default value is auto which inherits the  current value of align-items*/
+}
+.item-2 {
+    background-color: #B95F21;
+    padding-bottom: 5rem;
+
+     /*Flex properties for item in flexbox container*/
+
+     order: 1;
+    order: 2;
+    align-self: flex-end;
+}
+.item-3 {
+    background-color: #1C4C56;
+    padding-bottom: 8rem;
+
+     /*Flex properties for item in flexbox container*/
+
+     order: 1;
+    align-self: center;
+}
+.item-4 {
+    background-color: #CfB276;
+
+     /*Flex properties for item in flexbox container*/
+    align-self:stretch;
+}
+
+.item-5 {
+    background-color: #6B0803;
+
+    
+     /*Flex properties for item in flexbox container*/
+    order: 3;
+}
+
+.item-6 {
+    background-color: #1C4C56;
+}
+.item-7 {
+    background-color: #B95F21;
+}
+.item-8 {
+    background-color: #01243A;
+}
+.item-9 {
+    background-color: #AAD041;
+}

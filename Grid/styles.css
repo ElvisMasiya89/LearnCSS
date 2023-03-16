@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+}
+.container {
+  border: 6px solid black;
+  display: grid;
+  /* height: 800px; */
+
+  /* grid-template-columns:  300px 300px 200px; */
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* grid-template-columns: repeat(3, minmax(200px, 1fr)); */
+  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+  /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));  */
+  
+  /* grid-template-rows: repeat(3, 300px); */
+
+   grid-template: repeat(3, 200px)/repeat(3, 200px); /* rows/columns */  
+
+ 
+  /* column-gap: 20px; */
+  /* row-gap: 20px; */
+  /* gap:40px 20px   gap: <raw>  <column> */
+
+  /* justify-items: start; align items horizontally within the grid cell default value being stretch */
+  /* align-items: start; align items veritically within the grid cell  default value being stretch */
+  /* place-items: start center;*/ /* <vertically align items> <horizontally align items> */  
+
+
+  /* justify-content: center; */ /*for alignment  and spacing of the grid content<cells> along the row axis*/
+  /* align-content: center; */   /*for alignment  and spacing of the grid content<cells> along the column axis*/
+  /* place-content: center center;  <vertically align content <horizontally align content> */
+
+  
+
+  /* grid-auto-flow: column; controls how auto-placed items get inserted into grid values are row, column , dense,row dense, column dense */
+    /* grid-auto-flow: row;  */
+  /* grid-auto-columns: 100px; for setting default column width */
+  /* grid-auto-rows: 200px; for setting default row height */
+
+  /* Further reading
+   grid-template-areas
+   grid
+  */
+ 
+
+}
+
+.grid-item {
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+}
+.item-1 {
+  background-color: #b4bf35;
+  /*
+   grid-column-start, grid-column-end, grid-row-start, grid-row-end 
+   properties control   where the grid item starts and ends in the grid column
+   Using the grid-column and grid-row shorthand for the same purpose
+   Values can be a grid line number or the number of columns or rows the item has to span
+  */
+  /* grid-column-start: 1; */
+  /* grid-column-end: 3; */
+  /* grid-column-end: span 2; */
+
+  /* grid-row-start: 1; */
+  /* grid-row-end: 3; */
+  /* grid-row-end: span 2; */
+
+   /* grid-column: 1/span 2;
+   grid-row:1 / span 2; */
+
+   grid-area: 1 / 1/ span 2/span 2; /* row-start / col-start / row-end/ col-end*/
+}
+.item-2 {
+  background-color: #b95f21;
+
+  
+
+  /* justify-self: end; */ /*align item horizontally within the grid cell default value being stretch */
+  /* align-self: end; */ /*align item vertically within the grid cell default value being stretch */
+  place-self: end end;    /* <vertically align item> <horizontally align item> */  
+
+}
+.item-3 {
+  background-color: #1c4c56;
+}
+.item-4 {
+  background-color: #cfb276;
+}
+.item-5 {
+  background-color: #6b0803;
+}
+.item-6 {
+  background-color: #cfb276;
+}
+.item-7 {
+  background-color: #b95f21;
+}
+.item-8 {
+  background-color: #01243a;
+}
+.item-9 {
+  background-color: #aad041;
+}
